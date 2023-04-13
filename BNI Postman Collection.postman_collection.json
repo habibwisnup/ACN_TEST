@@ -1,0 +1,179 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BNI Postman Collection",
+		"_postman_id": "b5640676-ba2f-b2f7-2054-2145f4b307fe",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/habib/v1/users/1/refresh",
+			"request": {
+				"url": "http://localhost:8080/habib/v1/users/1/refresh",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"biometricLogin\": \"true\",\r\n    \"pushNotification\": \"true\",\r\n    \"smsNotification\": \"true\",\r\n    \"showOnboarding\": \"true\",\r\n    \"widgetOrder\": \"1,5,1,2,3\"\r\n  }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/habib/v1/users/1",
+			"request": {
+				"url": "http://localhost:8080/habib/v1/users/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"biometricLogin\": \"true\",\r\n    \"pushNotification\": \"true\",\r\n    \"smsNotification\": \"true\",\r\n    \"showOnboarding\": \"true\",\r\n    \"widgetOrder\": \"1,5,1,2,3\"\r\n  }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/habib/v1/users/1/settings",
+			"request": {
+				"url": "http://localhost:8080/habib/v1/users/1/settings",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"biometricLogin\": \"true\",\r\n    \"pushNotification\": \"true\",\r\n    \"smsNotification\": \"true\",\r\n    \"showOnboarding\": \"true\",\r\n    \"widgetOrder\": \"1,5,1,2,3\"\r\n  }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/habib/v1/users?page=0&size=10",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/habib/v1/users?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"habib",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "size",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ssn\": \"0000000000002945\",\r\n  \"firstName\": \"habib\",\r\n  \"middleName\": \"wisnu\",\r\n  \"familyName\": \"pratama\",\r\n  \"birthDate\": \"2023-04-13\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/habib/v1/users/1",
+			"request": {
+				"url": "http://localhost:8080/habib/v1/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ssn\": \"0000000000002945\",\r\n  \"firstName\": \"habib\",\r\n  \"middleName\": \"wisnu\",\r\n  \"familyName\": \"pratama\",\r\n  \"birthDate\": \"2023-04-13\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/habib/v1/users/1",
+			"request": {
+				"url": "http://localhost:8080/habib/v1/users/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"ssn\": \"0000000000002945\",\r\n \"firstName\": \"Jon\",\r\n \"familyName\": \"Snow\",\r\n \"birthDate\": \"1990-01-02\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/habib/v1/users",
+			"request": {
+				"url": "http://localhost:8080/habib/v1/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"warning": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"ssn\": \"0000000000002945\",\r\n \"firstName\": \"Jon\",\r\n \"familyName\": \"Snow\",\r\n \"birthDate\": \"1990-01-02\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
